@@ -31,7 +31,7 @@ connection.query(createDB, function (err) {
 });
 
 exports.GetAll = function(callback) {
-    connection.query('select UID, email from p2_user',
+    connection.query('select UID, email, Name from p2_user',
                      function (err, result) {
                          if (err) {
                              console.log(err);
